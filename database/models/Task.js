@@ -14,8 +14,8 @@ const Task = db.define("task", {
   },
 
   completionstatus: {
-    type: Sequelize.BOOLEAN,
-
+    type: Sequelize.STRING,
+    allowNull: false
   },
 
 });
