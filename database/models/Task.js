@@ -1,11 +1,10 @@
-const Sequelize = require('sequelize');
-const db = require('../db');
+const Sequelize = require("sequelize");
+const db = require("../db");
 
 const Task = db.define("task", {
-
   description: {
     type: Sequelize.STRING,
-    allowNull: false
+    allowNull: false,
   },
 
   prioritylevel: {
@@ -14,8 +13,9 @@ const Task = db.define("task", {
   },
 
   completionstatus: {
-    type: Sequelize.STRING,
-    allowNull: false
+    type: Sequelize.BOOLEAN,
+    allowNull: false,
+    
   },
 
 });

@@ -15,7 +15,6 @@ const syncDatabase = async () => {
 }
 
 const express = require("express");
-
 const app = express();
 
 const apiRouter = require('./routes');
@@ -55,7 +54,6 @@ const configureApp = async () => {
 const bootApp = async () => {
 
   await createDB();
-
 
   await syncDatabase();
 
