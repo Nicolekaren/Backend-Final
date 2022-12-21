@@ -1,4 +1,3 @@
-
 const Sequelize = require('sequelize');
 const {dbName, dbUser, dbPwd} = require('./utils/configDB');
 
