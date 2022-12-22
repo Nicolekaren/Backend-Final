@@ -10,7 +10,6 @@ const Task = db.define("task", {
   prioritylevel: {
     type: Sequelize.STRING,
     allowNull: false,
-    defautlValue: "Low"
   },
 
   completionstatus: {
